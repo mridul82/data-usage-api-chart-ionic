@@ -230,3 +230,14 @@
     --color: white;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root,
+:root[mode="md"],
+:root[mode="ios"] {
+  --ion-font-family: 'Varela Round', sans-serif;
+  font-family: var(--ion-font-family)
+}
+
+
+  

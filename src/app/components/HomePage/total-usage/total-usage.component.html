@@ -1,0 +1,33 @@
+<div class="title" padding>Monthly Data Usage <span (click)="navigateToUsage()"  class="anchor" slot="end">View All</span></div>
+
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let p of data" >
+      <ion-card class="ion-text-start">
+        <ion-item>
+          <ion-label>Month:</ion-label>
+          {{p.month}}
+        </ion-item>
+        
+        <ion-item>
+          <ion-label> Total Usage Vol :</ion-label>
+          {{p.total_usage_vol}}
+        </ion-item>
+        <ion-item>
+          <ion-label> Total Download Vol :</ion-label>
+          {{p.total_download_vol}}
+        </ion-item>
+        <ion-item>
+          <ion-label> Total Upload Vol :</ion-label>
+          {{p.total_upload_vol}}
+        </ion-item>
+        
+          
+      </ion-card>        
+         
+       
+    </ion-slide>
+ 
+
+  </ion-slides>
+
+

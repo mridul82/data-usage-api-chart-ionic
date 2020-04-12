@@ -1,0 +1,98 @@
+
+  <ion-card *ngFor="let p of data">
+
+    <ion-card-content>
+     
+      <ion-item>
+        <ion-label>Session Duration:</ion-label>
+        {{p.Duration}}
+      </ion-item>
+      <ion-item>
+        <ion-label> Start :</ion-label>
+        {{p.CALL_START}}
+      </ion-item>
+      <ion-item>
+        <ion-label> End :</ion-label>
+        {{p.CALL_END}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Usage:</ion-label>
+        {{p.USAGEMB}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Download Data:</ion-label>
+        {{p.Download}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Upload Data:</ion-label>
+        {{p.Upload}}
+      </ion-item>
+        
+    </ion-card-content>
+  </ion-card>
+<div *ngIf="!data">
+    <ion-card>
+      <ion-card-content>
+        
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>  <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>  <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+        
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>  <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>  <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+      <ion-item>
+        <ion-label> <ion-skeleton-text width="100%" animated></ion-skeleton-text></ion-label>
+        <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+      </ion-item>
+        
+      </ion-card-content>
+    </ion-card>
+    
+  
+  </div>
+
+
